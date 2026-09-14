@@ -1,0 +1,12 @@
+{
+  "name": "dashboard-pme-treino-backend",
+  "version": "0.1.0",
+  "description": "API Barbearia Corte Fino - treino até jan/2027",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
