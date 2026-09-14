@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Corte Fino — Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Barbearia Corte Fino</h1>
+        <p>Dashboard de clientes (treino)</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Clientes (<span id="total">0</span>)</h2>
+            <p id="erro" class="erro" hidden></p>
+            <ul id="lista"></ul>
+            <button id="atualizar" type="button">Atualizar lista</button>
+        </section>
+
+        <section class="card">
+            <h2>Novo cliente</h2>
+            <form id="form">
+                <label>
+                    Nome*
+                    <input id="nome" name="nome" type="text" required>
+                </label>
+                <label>
+                    Telefone*
+                    <input id="telefone" name="telefone" type="text" required>
+                </label>
+                <label>
+                    Último serviço
+                    <input id="ultimoServico" name="ultimoServico" type="text">
+                </label>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p id="msg" class="msg" hidden></p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
